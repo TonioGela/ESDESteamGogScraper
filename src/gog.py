@@ -201,7 +201,7 @@ class GOG():
 	
 		try:
 			fragment = soup("%s" % text, 'html.parser')
-			fragment_results = fragment.find_all(href=re.compile("^/games\?developers\="))
+			fragment_results = fragment.find_all(href=re.compile("^/games\\?developers\\="))
 			for f in fragment_results:
 				developer = f.text
 				print("- Found developer [%s]" % developer)
@@ -223,7 +223,7 @@ class GOG():
 	
 		try:
 			fragment = soup("%s" % text, 'html.parser')
-			fragment_results = fragment.find_all(href=re.compile("^/games\?publishers\="))
+			fragment_results = fragment.find_all(href=re.compile("^/games\\?publishers\\="))
 			for f in fragment_results:
 				publisher = f.text
 				print("- Found publisher [%s]" % publisher)

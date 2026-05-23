@@ -1,1 +1,0 @@
-python scrape.py --media e:\emulationstation\.emulationstation\downloaded_media\desktop --xml e:\emulationstation\.emulationstation\gamelists\desktop\gamelist.xml --roms e:\roms\desktop --provider gog -d -a -v

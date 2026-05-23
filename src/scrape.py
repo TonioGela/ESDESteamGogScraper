@@ -96,10 +96,8 @@ def exit_abnormal(code, msg):
 	sys.exit(code)
 
 if __name__ == "__main__":
-
-	print("Scraper running...")
-
-	parser = argparse.ArgumentParser(description='Scrape media and metadata for games in an EmulationStation folder.', add_help = True)
+	
+	parser = argparse.ArgumentParser(prog = "esde-steam-gog-scraper", description='Scrape media and metadata for games in an EmulationStation folder.', add_help = True)
 	parser.add_argument('-d', '--enable-data', dest='enable_data', action='store_true', help='Enable text metadata downloading')
 	parser.add_argument('-a', '--enable-art', dest='enable_art', action='store_true', help='Enable artwork (screens, titles, marquee, covers) image downloading')
 	parser.add_argument('-v', '--enable-video', dest='enable_video', action='store_true', help='Enable video downloading')

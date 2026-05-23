@@ -9,7 +9,7 @@
 #######################################
 
 import os
-from pytube import YouTube
+from pytubefix import YouTube
 
 # Video size steps
 video_steps = ["480p", "720p", "360p"]
